@@ -1,0 +1,66 @@
+Ir a la carpeta dodnde sera el repositorio
+
+Confifugrar github en la computadora
+
+configurar nombre usuario en git;
+git config --global user.name "Alex"
+cofigurar correo
+git config --global user.email "alexx_gsolis@hotmail.com"
+obtener llave ssh
+ssh-keygen
+ssh-keygen -t rsa -C "email@youremail.com"
+C:\Program Files (x86)\Git desde gitbash
+
+en github en configuracion cargar el archivo ssh generado
+
+para crear un repositorio en la maquina
+git init
+
+para agregar archivos
+git add o git add .
+
+git status para estatus del ropositorio
+
+para hacer los cambios en el repositorio
+git commit -m "descripocion del commit" 
+
+
+conectar mi repositorio con el de github
+git remote add origin urldegithubdelproyecto
+
+git pull origin master --para traer todo del github al repositorio local
+
+git push origin master --para mandar los cambios a github
+
+
+
+nota: cuando se hace un cambio en los archivos del repositorio local
+con git status podemos ver cuales fueron modificados
+hacer un git add . git commit -m "commit"
+Subir a github
+git push origin master
+
+creacion de fork
+para tener ramas (copias independientes) donde se pueden hacer cambios y al momento
+de verificar que funciona bien se puede fusionar con la rama master
+
+para recuperar un proyecto o fork de github a la maquina
+hacer una carpeta
+hacer un repositorio
+git remote add nombredelrepremotio(origin) urldelrepositioriodegithub
+git pull origin master
+
+
+forks locales
+git branch dev
+
+cambiar de rama
+checkout dev
+todos los datos guardados aqui solo se guardan en esta rama
+
+para ver las ramas git branch
+
+para hacer el merge en otra rama
+git merge nombredelaramaparaunificar (estar en la rama donde se quiere actualizar)
+
+git push origin master --para actualizar en github

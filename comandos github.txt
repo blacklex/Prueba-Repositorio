@@ -72,7 +72,7 @@ git push origin master --para actualizar en github
 pasos que casi siempre se usan para actulizar archivos
 git status
 git add . 
-git commit ""descripcion"
+git commit -m "descripcion"
 
 ----si no esta conectado a un repositorio ----
 conectar mi repositorio con el de github

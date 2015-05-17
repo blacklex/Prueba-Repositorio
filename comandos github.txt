@@ -27,6 +27,9 @@ git commit -m "descripocion del commit"
 
 conectar mi repositorio con el de github
 git remote add origin urldegithubdelproyecto
+o 
+git remote set-url origi
+n https://github.com/blacklex/Prueba-Repositorio.git
 
 git pull origin master --para traer todo del github al repositorio local
 
@@ -64,3 +67,21 @@ para hacer el merge en otra rama
 git merge nombredelaramaparaunificar (estar en la rama donde se quiere actualizar)
 
 git push origin master --para actualizar en github
+
+
+pasos que casi siempre se usan para actulizar archivos
+git status
+git add . 
+git commit ""descripcion"
+
+----si no esta conectado a un repositorio ----
+conectar mi repositorio con el de github
+git remote add origin urldegithubdelproyecto
+o 
+git remote set-url origi
+n https://github.com/blacklex/Prueba-Repositorio.git
+
+--traer una copia del repo
+git pull origin master --para traer todo del github al repositorio local
+------------------------------------------------
+git push origin master --para mandar los cambios a github

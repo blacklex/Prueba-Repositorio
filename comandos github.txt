@@ -85,3 +85,61 @@ n https://github.com/blacklex/Prueba-Repositorio.git
 git pull origin master --para traer todo del github al repositorio local
 ------------------------------------------------
 git push origin master --para mandar los cambios a github
+
+
+Update your branch when the original branch from official repository has been updated :
+
+$ git fetch [name_of_your_remote]
+
+Then you need to apply to merge changes, if your branch is derivated from develop you need to do :
+
+$ git merge [name_of_your_remote]/develop
+
+Delete a branch on your local filesystem :
+
+$ git branch -d [name_of_your_new_branch]
+
+To force the deletion of local branch on your filesystem :
+
+$ git branch -D [name_of_your_new_branch]
+
+Delete the branch on github :
+
+$ git push origin :[name_of_your_new_branch]
+
+
+
+The interesting part comes after we switch back to our master branch, which we can do with the git checkout command:
+
+git checkout master
+
+To ensure that we are on the master branch, we can run type the following:
+
+git branch 
+
+The output will tell us which branch we are one, indicated by the asterisk.
+
+  develop 
+* master
+
+Running "ls" again, it appears that our new file is missing.
+
+file
+
+It's not missing - it's on our develop branch and we are on our master branch.
+
+In our scenario, this file represents any change to any file (or a whole new file) that has passed all testing on our development branch,and is ready to be in production. The process of moving code between branches (often from development to production) is known as merging.
+
+It is important to remember when merging, that we want to be on the branch that we want to merge to.
+
+In this case, we want to merge from our develop branch, where the "develop" file exists, to our master branch.
+
+Keeping that in mind, considering that we are already on the master branch, all we have to do is run the merge command.
+
+One of the options that we can pass to the merge command, namely "--no-ff", means we want git to retain all of the commit messages prior to the merge. This will make tracking changes easier in the future.
+
+To merge the changes from the develop branch to the master branch, type the following:
+
+git merge develop --no-ff
+
+git push

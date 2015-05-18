@@ -11,24 +11,7 @@ ssh-keygen
 ssh-keygen -t rsa -C "email@youremail.com"
 C:\Program Files (x86)\Git desde gitbash
 
-en github en configuracion cargar el archivo ssh generado
 
-para crear un repositorio en la maquina
-git init
-
-para agregar archivos
-git add o git add .
-
-git status para estatus del ropositorio
-
-para hacer los cambios en el repositorio
-git commit -m "descripocion del commit" 
-
-
-conectar mi repositorio con el de github
-git remote add origin urldegithubdelproyecto
-o 
-git remote set-url origi
 n https://github.com/blacklex/Prueba-Repositorio.git
 
 git pull origin master --para traer todo del github al repositorio local
